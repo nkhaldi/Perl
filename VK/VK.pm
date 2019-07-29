@@ -18,7 +18,6 @@ sub new {
 	return $self;
 }
 
-
 sub request {
 	my $self = shift;
 	my $cb = pop;
@@ -138,6 +137,5 @@ sub groups_get {
 		$cb,
 	);
 }
-
 
 1;

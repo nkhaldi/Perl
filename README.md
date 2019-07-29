@@ -1,6 +1,6 @@
 # Perl
 
-Some Perl keys solved by me:
+Some Perl tasks solved by me:
 
 + VK		[Script]	returns user's public data by userid
 + calculator	[Module]	arithmetic calculator using RPN
