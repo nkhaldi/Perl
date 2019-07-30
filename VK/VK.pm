@@ -1,10 +1,9 @@
 package VK;
 
-use AnyEvent::HTTP;
 use URI;
-
-use JSON::XS;
 use DDP;
+use JSON::XS;
+use AnyEvent::HTTP;
 
 sub new {
 	my ($class, %args) = @_;
