@@ -2,11 +2,12 @@
 
 Some Perl tasks solved by me:
 
-+ VK		[Script]	returns user's public data by userid
-+ calculator	[Module]	arithmetic calculator using RPN
-+ json-parser	[Module]	JSON data parser into Hash
-+ immortal	[Script]	creates immortal process, almost imposible to kill
-+ terminal	[One-liner]	endless opents terminals
-+ reduce	[Script]	implementation of reduce function from List::Util
-+ tree		[Script]	implementation of Unix util pstree
-+ url-parser	[Script]	URL parser into Hash
++ VK		returns user's public data by userid
++ calculator	arithmetic calculator using RPN
++ comment-parser	removes "//" comments from .c and .h files
++ json-parser	JSON data parser into Hash
++ immortal	creates immortal process, almost imposible to kill
++ terminal	endless opents terminals
++ reduce	implementation of reduce function from List::Util
++ tree		implementation of Unix util pstree
++ url-parser	URL parser into Hash
