@@ -22,7 +22,7 @@ our @EXPORT_OK = qw(tokenize rpn evaluate);
 # Токенизация
 sub tokenize
 {
-	chomp(my $expr = shift);		# "10 + 20 - 30"
+	chomp(my $expr = shift);	# "10 + 20 - 30"
 	$expr =~ s/\s//g;			# "10+20-30"
 	$expr =~ s/E/e/g;			# '10E2' -> '10e2'
 
