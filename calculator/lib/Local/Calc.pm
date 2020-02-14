@@ -35,7 +35,7 @@ sub tokenize
 	}
 
 	my @res = split m{([-+*/^)(])}, $expr;		# '10', '+', '20', '-', '30'
-	@res = grep {length $_ } @res;			# '10', '+', '', '-', '20' -> '10', '+', '-', '20'
+	@res = grep {length $_ } @res;				# '10', '+', '', '-', '20' -> '10', '+', '-', '20'
 
 	my @chars;
 	for my $i (1..($#res-1))
