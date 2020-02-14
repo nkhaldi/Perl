@@ -1,29 +1,19 @@
-use 5.024; # strict enabled by default
+use 5.024;
 use warnings;
 
-use DDP;
-
-chomp (my $input = <>);
-
 my $el = 0;
-my $err = -1;
 my @stack = ();
+chomp (my $input = <>);
 my @brackets = split //, $input;
 
 sub get_pair {
-	$el = shift;
+	my $brac = shift;
 
-	if ($el eq '(') {
-		return ')';
-	} elsif ($el eq ')') {
+	if ($brac eq ')') {
 		return '(';
-	} elsif ($el eq '[') {
-		return ']';
-	} elsif ($el eq ']') {
+	} elsif ($brac eq ']') {
 		return '[';
-	} elsif ($el eq '{') {
-		return '}';
-	} elsif ($el eq '}') {
+	} elsif ($brac eq '}') {
 		return '{';
 	}
 	return 0;
@@ -33,27 +23,22 @@ while (@brackets) {
 	$_ = shift @brackets;
 	if (/\[|\(|\{/) {
 		push @stack, $_;
-		next;
 	} elsif (/\)|\]|\}/) {
-		p @stack;
-		$el = pop @stack;
-		say "el = $el";
-		if (!$el) {
-			$err++;
-			say $err;
+		if (@stack) {
+			$el = pop @stack;
+		} else {
+			say "Error";
 			exit;
-		} elsif ($el ne get_pair($_)) {
-			say "\$_ = $_";
-			say "pair = " . get_pair($_);
-			$err++;
-			say $err;
+		}
+		if ($el ne get_pair($_)) {
+			say "Error";
 			exit;
 		}
 	}
 }
 
 if (@stack) {
-	say $err;
+	say "Error";
 } else {
 	say "Success";
 }
