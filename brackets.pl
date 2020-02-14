@@ -33,18 +33,18 @@ while (@brackets) {
 		if (@stack) {
 			$el = pop @stack;
 		} else {
-			say "Error";
+			say "Fail";
 			exit;
 		}
 		if ($el ne get_pair($_)) {
-			say "Error";
+			say "Fail";
 			exit;
 		}
 	}
 }
 
 if (@stack) {
-	say "Error";
+	say "Fail";
 } else {
 	say "Success";
 }
