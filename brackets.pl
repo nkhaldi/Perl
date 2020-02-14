@@ -1,3 +1,7 @@
+#!/usr/bin/env perl
+
+#	Программа проверяющая правильность расстановки скобок в строке
+
 use 5.024;
 use warnings;
 
@@ -15,15 +19,17 @@ sub get_pair {
 		return '[';
 	} elsif ($brac eq '}') {
 		return '{';
+	} elsif ($brac eq '>') {
+		return '<';
 	}
 	return 0;
 }
 
 while (@brackets) {
 	$_ = shift @brackets;
-	if (/\[|\(|\{/) {
+	if (/\[|\(|\{|\</) {
 		push @stack, $_;
-	} elsif (/\)|\]|\}/) {
+	} elsif (/\)|\]|\}|\>/) {
 		if (@stack) {
 			$el = pop @stack;
 		} else {
