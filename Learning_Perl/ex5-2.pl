@@ -12,7 +12,7 @@ use 5.024;
 
 say "Enter your text:";
 chomp (my @lines = <>);
-say "1234567890" x 6, '\n';
+say "1234567890" x 5;
 for (@lines) {
 	printf "%20s\n", $_;
 }
