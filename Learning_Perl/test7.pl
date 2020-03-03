@@ -19,3 +19,9 @@ BammBamm
 llama
 fred loves wilma
 wilma loves fred
+I saw Wilma yesterday
+space in the end 
+tab in the end	
+ssd  sdsd
+   ssss
+sss     
