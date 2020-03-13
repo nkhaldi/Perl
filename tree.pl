@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use 5.016;
+use 5.024;
 use DDP;
 use Getopt::Long;
 

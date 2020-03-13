@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use 5.016;
+use 5.024;
 
 $SIG{INT} = sub {
 	say "\n\033[31mIMMORTALITY!\033[0m";
