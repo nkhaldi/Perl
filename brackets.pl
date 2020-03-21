@@ -4,6 +4,7 @@
 
 use 5.018;
 use warnings;
+no warnings 'experimental';
 
 my $el = 0;
 my @stack = ();

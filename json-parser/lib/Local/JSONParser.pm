@@ -2,7 +2,6 @@ package Local::JSONParser;
 
 use 5.018;
 use warnings;
-
 no warnings 'experimental';
 no warnings 'uninitialized';
 

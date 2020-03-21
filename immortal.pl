@@ -1,6 +1,8 @@
 #!/usr/bin/env perl
 
 use 5.018;
+use warnings;
+no warnings 'experimental';
 
 $SIG{INT} = sub {
 	say "\n\033[31mIMMORTALITY!\033[0m";

@@ -2,6 +2,7 @@ package Local::Calc;
 
 use 5.018;
 use warnings;
+no warnings 'experimental';
 
 use Scalar::Util qw(looks_like_number);
 use DDP;
