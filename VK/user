@@ -1,6 +1,9 @@
 #!/usr/bin/env perl
 
 use 5.016;
+use warnings;
+no warnings 'experimental';
+
 use utf8;
 use DDP;
 use AnyEvent::Socket;
