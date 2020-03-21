@@ -4,7 +4,8 @@
 # находилось в строках со словом Fred. Будут ли теперь найдены
 # совпадения во входных строках Fred, frederick и Alfred?
 
-use 5.024;
+use 5.018;
+use warnings;
 
 while (<>) {
 	print if (/(F|f)red/);

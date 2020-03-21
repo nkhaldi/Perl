@@ -7,7 +7,8 @@
 # (не запрашивайте его у пользователя!), а имя выходного файла
 # образуется из того же имени и расширения .out.
 
-use 5.024;
+use 5.018;
+use warnings;
 
 my $in = $ARGV[0];
 die "Usage: $0 filename" unless defined $in;

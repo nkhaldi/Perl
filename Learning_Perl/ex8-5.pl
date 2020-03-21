@@ -7,7 +7,8 @@
 # Например, если во входной строке говорится I saw Wilma yesterday,
 # в переменной должны сохраняться символы « yest».
 
-use 5.024;
+use 5.018;
+use warnings;
 
 while (<>) {
 	chomp;

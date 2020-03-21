@@ -4,7 +4,8 @@
 # вхождение Fred заменялось строкой Wilma,
 # а каждое вхождение Wilma – строкой Fred.
 
-use 5.024;
+use 5.018;
+use warnings;
 
 my $in = $ARGV[0];
 die "Usage: $0 filename" unless defined $in;

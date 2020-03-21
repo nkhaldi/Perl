@@ -6,7 +6,8 @@
 # Будет ли она находить совпадение в строке Fred,
 # но не в строках fred и FRED?
 
-use 5.024;
+use 5.018;
+use warnings;
 
 while (<>) {
 	print if (/([A-Z]+[a-z]+)|([a-z]+[A-Z]+)/);

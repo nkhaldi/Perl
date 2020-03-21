@@ -5,7 +5,8 @@
 # числа соответствующее имя из приведенного ниже списка:
 # fred betty barney dino wilma pebbles bammbamm
 
-use 5.024;
+use 5.018;
+use warnings;
 
 my @names = qw/fred betty barney dino wilma pebbles bammbamm/;
 chomp(my @numbers = <>);
