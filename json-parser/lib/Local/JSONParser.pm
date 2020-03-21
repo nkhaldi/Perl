@@ -1,6 +1,6 @@
 package Local::JSONParser;
 
-use 5.016;
+use 5.018;
 use warnings;
 
 no warnings 'experimental';

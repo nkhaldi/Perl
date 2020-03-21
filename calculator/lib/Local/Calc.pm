@@ -1,7 +1,6 @@
 package Local::Calc;
 
-use 5.010;
-use strict;
+use 5.018;
 use warnings;
 
 use Scalar::Util qw(looks_like_number);

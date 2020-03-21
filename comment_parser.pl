@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use 5.024;
+use 5.018;
 
 $^I = ".copy";
 
