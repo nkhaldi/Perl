@@ -1,11 +1,10 @@
-package Local::Calc;
+package Modules::Calc;
 
 use 5.018;
 use warnings;
-no warnings 'experimental';
 
-use Scalar::Util qw(looks_like_number);
 use DDP;
+use Scalar::Util qw(looks_like_number);
 
 BEGIN {
 	if ($] < 5.018) {
