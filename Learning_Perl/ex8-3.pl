@@ -9,9 +9,9 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	chomp;
-	if (/(\b\w*a\b)/) {
-		say "$_:";
-		say "\$1 contains '$1'";
-	}
+    chomp;
+    if (/(\b\w*a\b)/) {
+        say "$_:";
+        say "\$1 contains '$1'";
+    }
 }

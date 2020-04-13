@@ -14,6 +14,8 @@ use warnings;
 
 $^I = ".bak";
 while (<>) {
-	$_ .= "## Copyright (C) 20XX by Yours Truly\n" if (/^#!/);
-	print;
+    if (/^#!/) {
+        $_ .= "## Copyright (C) 20XX by Yours Truly\n";
+    }
+    print;
 }

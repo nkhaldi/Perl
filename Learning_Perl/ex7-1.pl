@@ -10,5 +10,5 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	print if (/fred/);
+    print if (/fred/);
 }

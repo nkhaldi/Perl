@@ -19,6 +19,6 @@ die "Can't open '$in': $!" unless (open IN, "<$in");
 die "Can't write '$out': $!" unless (open OUT, ">$out");
 
 while (<IN>) {
-	s/Fred/Larry/gi;
-	print OUT $_;
+    s/Fred/Larry/gi;
+    print OUT $_;
 }

@@ -7,5 +7,5 @@ use 5.018;
 use warnings;
 
 while (<>) { 
-	print if (/(wilma.*fred)|(fred.*wilma)/);
+    print if (/(wilma.*fred)|(fred.*wilma)/);
 }

@@ -13,5 +13,5 @@ chomp (my $str = <>);
 chomp (my $n = <>);
 
 while ($n--) {
-	say $str;
+    say $str;
 }

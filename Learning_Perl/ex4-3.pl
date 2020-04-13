@@ -10,25 +10,25 @@ use 5.018;
 use warnings;
 
 sub total {
-	my $sum = 0;
-	for (@_) {
-		$sum += $_;
-	}
-	return $sum;
+    my $sum = 0;
+    for (@_) {
+        $sum += $_;
+    }
+    return $sum;
 }
 
 sub average {
-	return total(@_) / ($#_ + 1);
+    return total(@_) / ($#_ + 1);
 }
 
 sub above_average {
-	my $av = average(@_);
-	my @res;
+    my $av = average(@_);
+    my @res;
 
-	for (@_) {
-		if ($_ > $av) {
-			push @res, $_;
-		}
-	}
-	return @res;
+    for (@_) {
+        if ($_ > $av) {
+            push @res, $_;
+        }
+    }
+    return @res;
 }

@@ -9,5 +9,5 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	print if (/(\S)\1/);
+    print if (/(\S)\1/);
 }

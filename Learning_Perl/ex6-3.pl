@@ -14,11 +14,11 @@ use warnings;
 my $maxl;
 
 for my $key (keys %ENV) {
-	my $key_len = length($key);
-	$maxl = $key_len if $key_len > $maxl;
+    my $key_len = length($key);
+    $maxl = $key_len if $key_len > $maxl;
 
 }
 
 for my $key (sort keys %ENV) {
-	printf "%${maxl}s %s\n", $key, $ENV{$key};
+    printf "%${maxl}s %s\n", $key, $ENV{$key};
 }

@@ -8,14 +8,14 @@ use 5.018;
 use warnings;
 
 sub greet {
-	state $prev = 0;
-	my $name = shift;
+    state $prev = 0;
+    my $name = shift;
 
-	print "Hello, $name! ";
-	if ($prev) {
-		say "$prev is also here!";
-	} else {
-		say "You're the first one here!";
-	}
-	$prev = $name;
+    print "Hello, $name! ";
+    if ($prev) {
+        say "$prev is also here!";
+    } else {
+        say "You're the first one here!";
+    }
+    $prev = $name;
 }

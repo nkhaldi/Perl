@@ -10,5 +10,5 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	print if (/([A-Z]+[a-z]+)|([a-z]+[A-Z]+)/);
+    print if (/([A-Z]+[a-z]+)|([a-z]+[A-Z]+)/);
 }

@@ -10,8 +10,8 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	chomp;
-	if (/a\b/) {
-		say;
-	}
+    chomp;
+    if (/a\b/) {
+        say;
+    }
 }

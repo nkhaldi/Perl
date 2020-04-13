@@ -11,5 +11,5 @@ use warnings;
 my @names = qw/fred betty barney dino wilma pebbles bammbamm/;
 chomp(my @numbers = <>);
 for (@numbers) {
-	say $names[$_ - 1];
+    say $names[$_ - 1];
 }

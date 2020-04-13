@@ -7,9 +7,9 @@ use 5.018;
 use warnings;
 
 sub total {
-	my $sum = 0;
-	for (@_) {
-		$sum += $_;
-	}
-	return $sum;
+    my $sum = 0;
+    for (@_) {
+        $sum += $_;
+    }
+    return $sum;
 }

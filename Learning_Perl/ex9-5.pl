@@ -11,18 +11,20 @@ use warnings;
 
 my %files;
 for (@ARGV) {
-	$files{$_} = 1;
+    $files{$_} = 1;
 }
 
 while (<>) {
-	if (/^## Copyright/) {
-		delete $files{$ARGV};
-	}
+    if (/^## Copyright/) {
+        delete $files{$ARGV};
+    }
 }
 
 @ARGV = sort keys %files;
 $^I = ".bak";
 while (<>) {
-	$_ .= "## Copyright (c) 20XX by Yours Truly\n" if (/^#!/);
-	print;
+    if (/^#!/) {
+        $_ .= "## Copyright (c) 20XX by Yours Truly\n";
+    }
+    print;
 }

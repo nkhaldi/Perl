@@ -8,8 +8,8 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	chomp;
-	if (/\s+$/) {
-		say "$_#";
-	}
+    chomp;
+    if (/\s+$/) {
+        say "$_#";
+    }
 }

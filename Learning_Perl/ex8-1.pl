@@ -8,8 +8,8 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	chomp;
-	if (/match/) {
-		say "$`<$&>$'";
-	}
+    chomp;
+    if (/match/) {
+        say "$`<$&>$'";
+    }
 }

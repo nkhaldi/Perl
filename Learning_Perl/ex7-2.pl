@@ -8,5 +8,5 @@ use 5.018;
 use warnings;
 
 while (<>) {
-	print if (/(F|f)red/);
+    print if (/(F|f)red/);
 }

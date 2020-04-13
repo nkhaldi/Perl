@@ -7,14 +7,14 @@ use 5.018;
 use warnings;
 
 sub greet {
-	state @prev;
-	my $name = shift;
+    state @prev;
+    my $name = shift;
 
-	print "Hello, $name! ";
-	if (@prev) {
-		say "I've seen @prev.";
-	} else {
-		say "You're the first one here!";
-	}
-	push @prev, $name;
+    print "Hello, $name! ";
+    if (@prev) {
+        say "I've seen @prev.";
+    } else {
+        say "You're the first one here!";
+    }
+    push @prev, $name;
 }

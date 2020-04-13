@@ -7,11 +7,11 @@ use 5.018;
 use warnings;
 
 my %names = qw/
-	Narek Meliksetyan
-	Polina Kaplenkova
-	Kirill Ilichev
-	Karen Melisketyan
-	Vladimir Putin
+    Narek Meliksetyan
+    Polina Kaplenkova
+    Kirill Ilichev
+    Karen Melisketyan
+    Vladimir Putin
 /;
 
 chomp (my $name = <>);

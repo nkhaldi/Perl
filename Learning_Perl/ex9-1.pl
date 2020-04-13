@@ -9,8 +9,8 @@ use warnings;
 chomp (my $what = <STDIN>);
 
 while (<>) {
-	chomp;
-	if (/($what){3}/) {
-		say;
-	}
+    chomp;
+    if (/($what){3}/) {
+        say;
+    }
 }

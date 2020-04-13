@@ -11,9 +11,9 @@ my %count;
 chomp (my @words = <>);
 
 for my $word (@words) {
-	$count{$word}++;
+    $count{$word}++;
 }
 
 for my $word (sort keys %count) {
-	say "$word - $count{$word}";
+    say "$word - $count{$word}";
 }
