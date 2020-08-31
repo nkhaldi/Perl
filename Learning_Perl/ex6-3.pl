@@ -11,12 +11,10 @@
 use 5.018;
 use warnings;
 
-my $maxl;
+my $maxl = 0;
 
 for my $key (keys %ENV) {
-    my $key_len = length($key);
-    $maxl = $key_len if $key_len > $maxl;
-
+    $maxl = length($key) if length($key) > $maxl;
 }
 
 for my $key (sort keys %ENV) {
