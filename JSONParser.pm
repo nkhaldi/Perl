@@ -1,12 +1,14 @@
-package Local::JSONParser;
+#!/usr/bin/env perl
+
+package JSONParser;
 
 use 5.018;
 use warnings;
 no warnings 'experimental';
 no warnings 'uninitialized';
 
-use Encode;
 use DDP;
+use Encode;
 use JSON::XS;
 
 use base qw( Exporter );

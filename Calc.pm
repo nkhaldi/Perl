@@ -1,4 +1,6 @@
-package Modules::Calc;
+#!/usr/bin/env perl
+
+package Calc;
 
 use 5.018;
 use warnings;
