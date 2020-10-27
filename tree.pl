@@ -13,8 +13,8 @@ $|++;
 my $pid = $$;
 my $help = 0;
 my $message = "
- --help        - Add this option to get help
- --all        - Add this option to print tree of all processes executed on OS
+ --help     - Add this option to get help
+ --all      - Add this option to print tree of all processes executed on OS
  --pid=n    - Add this option to print tree starting from transmitted process Id
  --features=...    - Add this option to print tree with specified parameters:
           pid - process identifier,
@@ -22,10 +22,11 @@ my $message = "
           gid - group identifier\n";
 
 my @features = ();
-GetOptions (    'all!' => \$pid,
-        'help!' => \$help,
-        'pid=i' => \$pid,
-        'features=s{1,3}' => \@features,
+GetOptions (
+    'all!' => \$pid,
+    'help!' => \$help,
+    'pid=i' => \$pid,
+    'features=s{1,3}' => \@features,
 ) or die "Usage arguments\n$message";
 
 die $message if $help;
