@@ -17,13 +17,13 @@ while (<>) {
 sub parse_url {
     my $url = shift;
     
-    $url =~    /^((?<schema>[^(:)]*):)?
+    $url =~ /^((?<schema>[^(:)]*):)?
         \/\/(?<domain>[\w\.-]*)
         (:(?<port>\d+))?
         (?<path>[^?#]*)?
         (\?(?<query_string>[^#]+))?
         (\#(?<anchor>.*))?
-        /x;
+    /x;
 
     return %+;
 }
